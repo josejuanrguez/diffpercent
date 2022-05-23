@@ -111,7 +111,6 @@ int main( int argc, char *argv[] )  {
    for (i = 0; i < minfilesize; i++ )
    {
        if (buffer1 [i] != buffer2 [i]) match = match + 1;
-       if (i >= fsize1 || i >= fsize2) break;
    }
 
    result = (float)match / (float)maxfilesize * 100;
